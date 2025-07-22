@@ -39,11 +39,11 @@ function renderCalendar(date = new Date()) {
        cell.className = "day";
 
        if (
-        day === today.getDate &&
+        day === today.getDate() &&
         month === today.getMonth() &&
         year === today.getFullYear()
        ) {
-        cell.className.add("today")
+        cell.classList.add("today");
        }
 
        const dateEl = document.createElement("div");
